@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maktaba - Munguri Teachers System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0b3d91, #1976d2);
+            color: white;
+            padding: 28px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0 0 8px;
+            font-size: 26px;
+        }
+
+        .header p {
+            margin: 5px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .search-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+
+        .search-box input,
+        .search-box select {
+            width: 100%;
+            padding: 13px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .category {
+            background: white;
+            padding: 22px 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .category .icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .category h3 {
+            color: #0b3d91;
+            margin-bottom: 8px;
+        }
+
+        .category p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .category button {
+            margin-top: 12px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            background: #0b3d91;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .admin-box {
+            margin-top: 25px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #0b3d91;
+        }
+
+        .admin-box h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin: 25px 0;
+            color: #0b3d91;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>📚 MAKTABA YA MUNGURI</h1>
+
+        <p>Munguri Teachers System</p>
+
+        <p>Rasilimali za Kufundishia na Kujifunzia</p>
+
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="search-box">
+
+            <h2>🔎 Tafuta Rasilimali</h2>
+
+            <input
+                type="text"
+                placeholder="Andika jina la kitabu au nyaraka..."
+            >
+
+            <select>
+
+                <option>Chagua darasa</option>
+
+                <option>Darasa la Kwanza</option>
+
+                <option>Darasa la Pili</option>
+
+                <option>Darasa la Tatu</option>
+
+                <option>Darasa la Nne</option>
+
+                <option>Darasa la Tano</option>
+
+                <option>Darasa la Sita</option>
+
+                <option>Darasa la Saba</option>
+
+            </select>
+
+
+            <select>
+
+                <option>Chagua somo</option>
+
+                <option>Hisabati</option>
+
+                <option>Sayansi na Teknolojia</option>
+
+                <option>Kiswahili</option>
+
+                <option>Kiingereza</option>
+
+                <option>Maarifa ya Jamii</option>
+
+                <option>Historia ya Tanzania</option>
+
+                <option>Jiografia na Mazingira</option>
+
+                <option>Uraia na Maadili</option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="categories">
+
+
+            <div class="category">
+
+                <div class="icon">📘</div>
+
+                <h3>Vitabu vya Kiada</h3>
+
+                <p>
+                    Vitabu vya masomo vinavyotumika
+                    katika ufundishaji wa shule ya msingi.
+                </p>
+
+                <button onclick="alert('Sehemu ya vitabu vya kiada itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+
+
+            <div class="category">
+
+                <div class="icon">📗</div>
+
+                <h3>Vitabu vya Ziada</h3>
+
+                <p>
+                    Vitabu vya kusaidia mwalimu
+                    na mwanafunzi kuongeza maarifa.
+                </p>
+
+                <button onclick="alert('Sehemu ya vitabu vya ziada itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+
+
+            <div class="category">
+
+                <div class="icon">📙</div>
+
+                <h3>Miongozo ya Ufundishaji</h3>
+
+                <p>
+                    Miongozo na nyenzo zinazomsaidia
+                    mwalimu katika ufundishaji.
+                </p>
+
+                <button onclick="alert('Sehemu ya miongozo itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+
+
+            <div class="category">
+
+                <div class="icon">📕</div>
+
+                <h3>Mitaala</h3>
+
+                <p>
+                    Mitaala na nyaraka muhimu
+                    zinazohusiana na elimu.
+                </p>
+
+                <button onclick="alert('Sehemu ya mitaala itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+
+
+            <div class="category">
+
+                <div class="icon">📝</div>
+
+                <h3>Mitihani</h3>
+
+                <p>
+                    Mitihani, majaribio na nyaraka
+                    za tathmini za wanafunzi.
+                </p>
+
+                <button onclick="alert('Sehemu ya mitihani itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+
+
+            <div class="category">
+
+                <div class="icon">📊</div>
+
+                <h3>TOS</h3>
+
+                <p>
+                    Tables of Specification kwa
+                    maandalizi ya mitihani.
+                </p>
+
+                <button onclick="alert('Sehemu ya TOS itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+
+
+            <div class="category">
+
+                <div class="icon">📋</div>
+
+                <h3>Azimio la Kazi</h3>
+
+                <p>
+                    Azimio la kazi na nyaraka
+                    zinazohusiana na ufundishaji.
+                </p>
+
+                <button onclick="alert('Sehemu ya azimio itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+
+
+            <div class="category">
+
+                <div class="icon">📄</div>
+
+                <h3>Nyaraka Nyingine</h3>
+
+                <p>
+                    Nyaraka mbalimbali muhimu
+                    za Shule ya Msingi Munguri.
+                </p>
+
+                <button onclick="alert('Sehemu ya nyaraka itaongezwa.')">
+                    Fungua
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="admin-box">
+
+            <h2>👨‍💼 Eneo la ADMIN</h2>
+
+            <p>
+                ADMIN ataweza kuongeza na kusimamia
+                vitabu, miongozo, mitaala, mitihani,
+                TOS na nyaraka nyingine za shule.
+            </p>
+
+            <button
+                onclick="alert('Mfumo wa ADMIN utaunganishwa katika hatua inayofuata.')"
+                style="padding:12px 20px;
+                       border:none;
+                       border-radius:8px;
+                       background:#0b3d91;
+                       color:white;
+                       font-weight:bold;">
+                ⚙️ SIMAMIA MAKTABA
+            </button>
+
+        </div>
+
+
+        <a class="back" href="dashboard.html">
+            ← Rudi Dashboard
+        </a>
+
+    </div>
+
+
+    <div class="footer">
+
+        Munguri Teachers System © 2026
+
+    </div>
+
+</body>
+</html>
