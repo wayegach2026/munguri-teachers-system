@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jisajili - Munguri Teachers System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0b3d91, #1976d2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0b3d91;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            border: none;
+            border-radius: 9px;
+            background: #0b3d91;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back a {
+            color: #0b3d91;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📝 JISAJILI</h1>
+
+        <p class="subtitle">
+            Munguri Teachers System
+        </p>
+
+        <label>Jina Kamili</label>
+        <input type="text" placeholder="Andika jina lako kamili">
+
+        <label>Namba ya Simu</label>
+        <input type="tel" placeholder="Mfano: 07XXXXXXXX">
+
+        <label>Barua Pepe</label>
+        <input type="email" placeholder="Andika barua pepe">
+
+        <label>Somo Unalofundisha</label>
+        <input type="text" placeholder="Mfano: Hisabati">
+
+        <label>Darasa</label>
+        <select>
+            <option>Chagua darasa</option>
+            <option>Darasa la Kwanza</option>
+            <option>Darasa la Pili</option>
+            <option>Darasa la Tatu</option>
+            <option>Darasa la Nne</option>
+            <option>Darasa la Tano</option>
+            <option>Darasa la Sita</option>
+            <option>Darasa la Saba</option>
+        </select>
+
+        <label>Nenosiri</label>
+        <input type="password" placeholder="Tengeneza nenosiri">
+
+        <button type="button" onclick="alert('Usajili utaunganishwa na mfumo wa akaunti katika hatua inayofuata.')">
+            JISAJILI
+        </button>
+
+        <div class="back">
+            <a href="index.html">← Rudi ukurasa wa mwanzo</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
