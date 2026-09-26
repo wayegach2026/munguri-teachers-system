@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitabu vya Kiada - Munguri Teachers System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 8px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        .filters {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .filters input,
+        .filters select {
+            width: 100%;
+            padding: 13px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .book {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .book-icon {
+            font-size: 45px;
+        }
+
+        .book h3 {
+            color: #0d47a1;
+            margin-bottom: 8px;
+        }
+
+        .book p {
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 16px;
+            margin-top: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            background: #1976d2;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download {
+            background: #2e7d32;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin: 30px 0;
+            padding: 14px;
+            background: #0d47a1;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .note {
+            background: #fff8e1;
+            border-left: 5px solid #ffb300;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📘 VITABU VYA KIADA</h1>
+    <p>Munguri Teachers System</p>
+</header>
+
+<div class="container">
+
+    <div class="note">
+        <strong>📚 Maktaba ya Vitabu</strong><br>
+        Chagua darasa na somo ili kupata vitabu vya kiada.
+        Vitabu halisi vya PDF vitaongezwa na ADMIN.
+    </div>
+
+    <div class="filters">
+
+        <label>🔎 Tafuta Kitabu</label>
+        <input type="text" placeholder="Andika jina la kitabu...">
+
+        <label>🎓 Chagua Darasa</label>
+        <select>
+            <option>Chagua Darasa</option>
+            <option>Darasa la Kwanza</option>
+            <option>Darasa la Pili</option>
+            <option>Darasa la Tatu</option>
+            <option>Darasa la Nne</option>
+            <option>Darasa la Tano</option>
+            <option>Darasa la Sita</option>
+            <option>Darasa la Saba</option>
+        </select>
+
+        <label>📚 Chagua Somo</label>
+        <select>
+            <option>Chagua Somo</option>
+            <option>Kiswahili</option>
+            <option>English</option>
+            <option>Hisabati</option>
+            <option>Sayansi na Teknolojia</option>
+            <option>Maarifa ya Jamii</option>
+            <option>Uraia na Maadili</option>
+        </select>
+
+    </div>
+
+    <div class="books">
+
+        <div class="book">
+            <div class="book-icon">📘</div>
+            <h3>Kitabu cha Hisabati</h3>
+            <p><strong>Darasa:</strong> Darasa la Saba</p>
+            <p><strong>Somo:</strong> Hisabati</p>
+
+            <button class="btn"
+                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
+                👁️ Fungua
+            </button>
+
+            <button class="btn download"
+                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
+                ⬇️ Pakua
+            </button>
+        </div>
+
+
+        <div class="book">
+            <div class="book-icon">📗</div>
+            <h3>Kitabu cha Kiswahili</h3>
+            <p><strong>Darasa:</strong> Darasa la Saba</p>
+            <p><strong>Somo:</strong> Kiswahili</p>
+
+            <button class="btn"
+                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
+                👁️ Fungua
+            </button>
+
+            <button class="btn download"
+                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
+                ⬇️ Pakua
+            </button>
+        </div>
+
+
+        <div class="book">
+            <div class="book-icon">📙</div>
+            <h3>Kitabu cha Sayansi</h3>
+            <p><strong>Darasa:</strong> Darasa la Saba</p>
+            <p><strong>Somo:</strong> Sayansi na Teknolojia</p>
+
+            <button class="btn"
+                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
+                👁️ Fungua
+            </button>
+
+            <button class="btn download"
+                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
+                ⬇️ Pakua
+            </button>
+        </div>
+
+
+        <div class="book">
+            <div class="book-icon">📕</div>
+            <h3>Kitabu cha English</h3>
+            <p><strong>Darasa:</strong> Darasa la Saba</p>
+            <p><strong>Somo:</strong> English</p>
+
+            <button class="btn"
+                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
+                👁️ Fungua
+            </button>
+
+            <button class="btn download"
+                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
+                ⬇️ Pakua
+            </button>
+        </div>
+
+    </div>
+
+    <a href="maktaba.html" class="back">
+        ⬅️ Rudi Maktaba
+    </a>
+
+    <a href="dashboard.html" class="back">
+        🏠 Rudi Dashboard
+    </a>
+
+</div>
+
+</body>
+</html>
