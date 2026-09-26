@@ -25,14 +25,10 @@
             font-size: 28px;
         }
 
-        header p {
-            margin-top: 8px;
-        }
-
         .container {
             max-width: 1000px;
             margin: 25px auto;
-            padding: 0 15px;
+            padding: 15px;
         }
 
         .filters {
@@ -43,8 +39,11 @@
             margin-bottom: 25px;
         }
 
-        .filters input,
-        .filters select {
+        label {
+            font-weight: bold;
+        }
+
+        select {
             width: 100%;
             padding: 13px;
             margin-top: 8px;
@@ -73,11 +72,6 @@
 
         .book h3 {
             color: #0d47a1;
-            margin-bottom: 8px;
-        }
-
-        .book p {
-            color: #555;
         }
 
         .btn {
@@ -88,31 +82,25 @@
             text-decoration: none;
             color: white;
             background: #1976d2;
-            border: none;
-            cursor: pointer;
         }
 
-        .download {
-            background: #2e7d32;
+        .message {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         .back {
             display: block;
             text-align: center;
-            margin: 30px 0;
+            margin-top: 30px;
             padding: 14px;
             background: #0d47a1;
             color: white;
             text-decoration: none;
             border-radius: 10px;
-        }
-
-        .note {
-            background: #fff8e1;
-            border-left: 5px solid #ffb300;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -126,132 +114,28 @@
 
 <div class="container">
 
-    <div class="note">
-        <strong>📚 Maktaba ya Vitabu</strong><br>
-        Chagua darasa na somo ili kupata vitabu vya kiada.
-        Vitabu halisi vya PDF vitaongezwa na ADMIN.
-    </div>
-
     <div class="filters">
 
-        <label>🔎 Tafuta Kitabu</label>
-        <input type="text" placeholder="Andika jina la kitabu...">
-
         <label>🎓 Chagua Darasa</label>
-        <select>
-            <option>Chagua Darasa</option>
-            <option>Darasa la Kwanza</option>
-            <option>Darasa la Pili</option>
-            <option>Darasa la Tatu</option>
-            <option>Darasa la Nne</option>
-            <option>Darasa la Tano</option>
-            <option>Darasa la Sita</option>
-            <option>Darasa la Saba</option>
-        </select>
 
-        <label>📚 Chagua Somo</label>
-        <select>
-            <option>Chagua Somo</option>
-            <option>Kiswahili</option>
-            <option>English</option>
-            <option>Hisabati</option>
-            <option>Sayansi na Teknolojia</option>
-            <option>Maarifa ya Jamii</option>
-            <option>Uraia na Maadili</option>
+        <select id="darasa" onchange="onyeshaVitabu()">
+            <option value="">Chagua Darasa</option>
+            <option value="1">Darasa la Kwanza</option>
+            <option value="2">Darasa la Pili</option>
+            <option value="3">Darasa la Tatu</option>
+            <option value="4">Darasa la Nne</option>
+            <option value="5">Darasa la Tano</option>
+            <option value="6">Darasa la Sita</option>
+            <option value="7">Darasa la Saba</option>
         </select>
 
     </div>
 
-    <div class="books">
-
-        <div class="book">
-            <div class="book">
-    <div class="book-icon">📘</div>
-
-    <h3>Kitabu cha Hisabati</h3>
-
-    <p><strong>Darasa:</strong> Darasa la Saba</p>
-    <p><strong>Somo:</strong> Hisabati</p>
-
-    <button class="btn"
-        onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
-        👁️ Fungua
-    </button>
-
-    <button class="btn download"
-        onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
-        ⬇️ Pakua
-    </button>
-</div>
-            <p><strong>Darasa:</strong> Darasa la Saba</p>
-            <p><strong>Somo:</strong> Hisabati</p>
-
-            <button class="btn"
-                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
-                👁️ Fungua
-            </button>
-
-            <button class="btn download"
-                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
-                ⬇️ Pakua
-            </button>
-        </div>
-
-
-        <div class="book">
-            <div class="book-icon">📗</div>
-            <h3>Kitabu cha Kiswahili</h3>
-            <p><strong>Darasa:</strong> Darasa la Saba</p>
-            <p><strong>Somo:</strong> Kiswahili</p>
-
-            <button class="btn"
-                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
-                👁️ Fungua
-            </button>
-
-            <button class="btn download"
-                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
-                ⬇️ Pakua
-            </button>
-        </div>
-
-
-        <div class="book">
-            <div class="book-icon">📙</div>
-            <h3>Kitabu cha Sayansi</h3>
-            <p><strong>Darasa:</strong> Darasa la Saba</p>
-            <p><strong>Somo:</strong> Sayansi na Teknolojia</p>
-
-            <button class="btn"
-                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
-                👁️ Fungua
-            </button>
-
-            <button class="btn download"
-                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
-                ⬇️ Pakua
-            </button>
-        </div>
-
-
-        <div class="book">
-            <div class="book-icon">📕</div>
-            <h3>Kitabu cha English</h3>
-            <p><strong>Darasa:</strong> Darasa la Saba</p>
-            <p><strong>Somo:</strong> English</p>
-
-            <button class="btn"
-                onclick="alert('PDF ya kitabu hiki itawekwa na ADMIN.')">
-                👁️ Fungua
-            </button>
-
-            <button class="btn download"
-                onclick="alert('PDF ya kupakua itawekwa na ADMIN.')">
-                ⬇️ Pakua
-            </button>
-        </div>
-
+    <div id="ujumbe" class="message">
+        📚 Tafadhali chagua darasa ili kuona vitabu.
     </div>
+
+    <div id="vitabu" class="books"></div>
 
     <a href="maktaba.html" class="back">
         ⬅️ Rudi Maktaba
@@ -262,6 +146,93 @@
     </a>
 
 </div>
+
+<script>
+
+function onyeshaVitabu() {
+
+    let darasa = document.getElementById("darasa").value;
+    let vitabu = document.getElementById("vitabu");
+    let ujumbe = document.getElementById("ujumbe");
+
+    vitabu.innerHTML = "";
+
+    if (darasa === "") {
+        ujumbe.style.display = "block";
+        return;
+    }
+
+    ujumbe.style.display = "none";
+
+    let vitabuDarasa = {
+
+        "1": [
+            ["📘", "Hisabati", "Hisabati"]
+        ],
+
+        "2": [
+            ["📘", "Hisabati", "Hisabati"]
+        ],
+
+        "3": [
+            ["📘", "Hisabati", "Hisabati"]
+        ],
+
+        "4": [
+            ["📘", "Hisabati", "Hisabati"],
+            ["📗", "Kiswahili", "Kiswahili"],
+            ["📙", "Sayansi", "Sayansi na Teknolojia"]
+        ],
+
+        "5": [
+            ["📘", "Hisabati", "Hisabati"],
+            ["📗", "Kiswahili", "Kiswahili"],
+            ["📙", "Sayansi", "Sayansi na Teknolojia"]
+        ],
+
+        "6": [
+            ["📘", "Hisabati", "Hisabati"],
+            ["📗", "Kiswahili", "Kiswahili"],
+            ["📙", "Sayansi", "Sayansi na Teknolojia"]
+        ],
+
+        "7": [
+            ["📘", "Hisabati", "Hisabati"],
+            ["📗", "Kiswahili", "Kiswahili"],
+            ["📙", "Sayansi", "Sayansi na Teknolojia"],
+            ["📕", "English", "English"],
+            ["📔", "Maarifa ya Jamii", "Maarifa ya Jamii"],
+            ["📓", "Uraia na Maadili", "Uraia na Maadili"]
+        ]
+    };
+
+    let vitabuVyaDarasa = vitabuDarasa[darasa];
+
+    vitabuVyaDarasa.forEach(function(kitabu) {
+
+        vitabu.innerHTML += `
+            <div class="book">
+
+                <div class="book-icon">${kitabu[0]}</div>
+
+                <h3>Kitabu cha ${kitabu[1]}</h3>
+
+                <p><strong>Darasa:</strong> Darasa la ${darasa}</p>
+
+                <p><strong>Somo:</strong> ${kitabu[2]}</p>
+
+                <a href="https://ol.tie.go.tz/" target="_blank" class="btn">
+                    📖 Fungua TIE
+                </a>
+
+            </div>
+        `;
+
+    });
+
+}
+
+</script>
 
 </body>
 </html>
