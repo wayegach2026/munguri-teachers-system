@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingia - Munguri Teachers System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0b3d91, #1976d2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0b3d91;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            border: none;
+            border-radius: 9px;
+            background: #0b3d91;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .register {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register a {
+            color: #0b3d91;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔐 INGIA</h1>
+
+        <p class="subtitle">
+            Munguri Teachers System
+        </p>
+
+        <label>Barua Pepe au Namba ya Simu</label>
+        <input type="text" placeholder="Andika barua pepe au namba ya simu">
+
+        <label>Nenosiri</label>
+        <input type="password" placeholder="Andika nenosiri">
+
+        <button type="button" onclick="alert('Mfumo wa kuingia utaunganishwa na akaunti katika hatua inayofuata.')">
+            INGIA
+        </button>
+
+        <div class="register">
+            Huna akaunti?
+            <a href="register.html">Jisajili hapa</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
