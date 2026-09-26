@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maandalio ya Masomo - Munguri Teachers System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0b3d91, #1976d2);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #0b3d91;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 6px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 9px;
+            background: #0b3d91;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .print {
+            background: #1976d2;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #0b3d91;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+
+            body {
+                background: white;
+            }
+
+            .card {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🏫 MUNGURI TEACHERS SYSTEM</h1>
+        <p>Maandalio ya Masomo</p>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>📚 ANDAA SOMO</h2>
+
+            <label>Jina la Mwalimu</label>
+            <input type="text" placeholder="Andika jina la mwalimu">
+
+            <label>Somo</label>
+            <input type="text" placeholder="Mfano: Hisabati">
+
+            <label>Darasa</label>
+            <select>
+                <option>Chagua darasa</option>
+                <option>Darasa la Kwanza</option>
+                <option>Darasa la Pili</option>
+                <option>Darasa la Tatu</option>
+                <option>Darasa la Nne</option>
+                <option>Darasa la Tano</option>
+                <option>Darasa la Sita</option>
+                <option>Darasa la Saba</option>
+            </select>
+
+            <label>Tarehe</label>
+            <input type="date">
+
+            <label>Mada</label>
+            <input type="text" placeholder="Andika mada ya somo">
+
+            <label>Mada Ndogo</label>
+            <input type="text" placeholder="Andika mada ndogo">
+
+            <label>Lengo la Somo</label>
+            <textarea placeholder="Andika lengo la somo"></textarea>
+
+            <label>Umahiri Unaotarajiwa</label>
+            <textarea placeholder="Andika umahiri unaotarajiwa"></textarea>
+
+            <label>Shughuli za Mwalimu na Mwanafunzi</label>
+            <textarea placeholder="Andika shughuli za ufundishaji na ujifunzaji"></textarea>
+
+            <label>Zana za Kufundishia na Kujifunzia</label>
+            <textarea placeholder="Andika zana zitakazotumika"></textarea>
+
+            <label>Upimaji na Tathmini</label>
+            <textarea placeholder="Andika namna utakavyopima ujifunzaji"></textarea>
+
+            <label>Maoni / Tafakari ya Mwalimu</label>
+            <textarea placeholder="Andika maoni baada ya somo"></textarea>
+
+            <div class="no-print">
+
+                <button onclick="alert('Maandalio yamehifadhiwa kwa muda kwenye ukurasa huu.')">
+                    💾 HIFADHI MAANDALIO
+                </button>
+
+                <button class="print" onclick="window.print()">
+                    🖨️ CHAPISHA MAANDALIO
+                </button>
+
+            </div>
+
+            <a class="back no-print" href="dashboard.html">
+                ← Rudi Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
