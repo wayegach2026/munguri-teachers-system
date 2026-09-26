@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Munguri Teachers System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0b3d91, #1976d2);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .welcome {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .welcome h2 {
+            color: #0b3d91;
+            margin-bottom: 8px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #0b3d91;
+            margin-bottom: 7px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .logout {
+            display: block;
+            width: 200px;
+            margin: 30px auto 10px;
+            padding: 13px;
+            border: none;
+            border-radius: 9px;
+            background: #0b3d91;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🏫 MUNGURI TEACHERS SYSTEM</h1>
+        <p>Shule ya Msingi Munguri</p>
+        <p>“Elimu, Nidhamu na Kazi”</p>
+    </div>
+
+    <div class="container">
+
+        <div class="welcome">
+            <h2>Karibu, Mwalimu 👨‍🏫</h2>
+            <p>Hii ni Dashboard yako ya Mwalimu.</p>
+        </div>
+
+        <div class="menu">
+
+            <div class="card">
+                <div class="icon">👤</div>
+                <h3>Wasifu wa Mwalimu</h3>
+                <p>Angalia na hariri taarifa zako.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Maandalio ya Masomo</h3>
+                <p>Andaa, hifadhi na chapisha maandalio.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📖</div>
+                <h3>Maktaba</h3>
+                <p>Vitabu, mitaala, miongozo na nyaraka.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Azimio la Kazi</h3>
+                <p>Andaa na hifadhi azimio la kazi.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🕐</div>
+                <h3>Ratiba ya Vipindi</h3>
+                <p>Angalia ratiba ya vipindi vya shule.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Tathmini na Mitihani</h3>
+                <p>Mitihani, TOS na kumbukumbu za matokeo.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📒</div>
+                <h3>Shajara ya Mwalimu</h3>
+                <p>Hifadhi kumbukumbu za shughuli za ufundishaji.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📢</div>
+                <h3>Matangazo ya Shule</h3>
+                <p>Angalia matangazo na taarifa muhimu.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏫</div>
+                <h3>Taarifa za Shule</h3>
+                <p>Angalia taarifa mbalimbali za shule.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👨‍🏫</div>
+                <h3>Walimu</h3>
+                <p>Angalia orodha na mawasiliano ya walimu.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📑</div>
+                <h3>Nyaraka za Shule</h3>
+                <p>Fikia nyaraka muhimu za shule.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔔</div>
+                <h3>Arifa</h3>
+                <p>Angalia taarifa na ujumbe mpya.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Mipangilio</h3>
+                <p>Simamia mipangilio ya mfumo.</p>
+            </div>
+
+        </div>
+
+        <button class="logout" onclick="location.href='index.html'">
+            🚪 Toka
+        </button>
+
+    </div>
+
+    <div class="footer">
+        Munguri Teachers System © 2026
+    </div>
+
+</body>
+</html>
