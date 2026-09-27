@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ongeza Kitabu - Munguri Teachers System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #0d47a1;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 13px;
+            margin-top: 7px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            background: #0d47a1;
+            color: white;
+            padding: 13px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>➕ ONGEZA KITABU</h1>
+    <p>Munguri Teachers System</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <label>📕 Jina la Kitabu</label>
+        <input type="text" id="jina" placeholder="Mfano: Hisabati Darasa la Saba">
+
+        <label>🎓 Chagua Darasa</label>
+        <select id="darasa">
+            <option value="">Chagua Darasa</option>
+            <option>Darasa la Kwanza</option>
+            <option>Darasa la Pili</option>
+            <option>Darasa la Tatu</option>
+            <option>Darasa la Nne</option>
+            <option>Darasa la Tano</option>
+            <option>Darasa la Sita</option>
+            <option>Darasa la Saba</option>
+        </select>
+
+        <label>📚 Chagua Somo</label>
+        <select id="somo">
+            <option value="">Chagua Somo</option>
+            <option>Hisabati</option>
+            <option>Kiswahili</option>
+            <option>Sayansi na Teknolojia</option>
+            <option>English</option>
+            <option>Maarifa ya Jamii</option>
+            <option>Uraia na Maadili</option>
+        </select>
+
+        <label>🔗 Kiungo cha Kitabu</label>
+        <input type="url" id="kiungo"
+               placeholder="Bandika link ya PDF au kitabu hapa">
+
+        <button class="btn" onclick="hifadhiKitabu()">
+            💾 HIFADHI KITABU
+        </button>
+
+        <a href="admin.html" class="back">
+            ⬅️ Rudi ADMIN
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+function hifadhiKitabu() {
+
+    let jina = document.getElementById("jina").value;
+    let darasa = document.getElementById("darasa").value;
+    let somo = document.getElementById("somo").value;
+    let kiungo = document.getElementById("kiungo").value;
+
+    if (jina === "" || darasa === "" || somo === "" || kiungo === "") {
+        alert("Tafadhali jaza taarifa zote za kitabu.");
+        return;
+    }
+
+    alert("Kitabu kimehifadhiwa kwa mafanikio.");
+
+}
+</script>
+
+</body>
+</html>
