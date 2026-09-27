@@ -5,45 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Munguri Teachers System</title>
 
-    <style><a href="maandalio.html" style="text-decoration:none; color:inherit;">
-    <div class="card">
-        <div class="icon">📚</div>
-        <h3>Maandalio ya Masomo</h3>
-        <p>Andaa, hifadhi na chapisha maandalio.</p>
-    </div>
-</a>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
+    <style>
         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
             background: #f4f7fb;
-            color: #333;
         }
 
-        .header {
-            background: linear-gradient(135deg, #0b3d91, #1976d2);
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
             color: white;
-            padding: 25px 20px;
             text-align: center;
+            padding: 30px 15px;
         }
 
-        .header h1 {
-            font-size: 25px;
-            margin-bottom: 8px;
-        }
-
-        .header p {
-            font-size: 15px;
+        header h1 {
+            margin: 0;
         }
 
         .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 15px;
         }
 
         .welcome {
@@ -51,27 +34,22 @@
             padding: 20px;
             border-radius: 15px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
         }
 
-        .welcome h2 {
-            color: #0b3d91;
-            margin-bottom: 8px;
-        }
-
-        .menu {
+        .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
+            gap: 18px;
         }
 
         .card {
             background: white;
-            padding: 22px 15px;
+            padding: 22px;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
             transition: 0.2s;
         }
 
@@ -80,155 +58,149 @@
         }
 
         .icon {
-            font-size: 35px;
+            font-size: 40px;
             margin-bottom: 10px;
         }
 
         .card h3 {
-            color: #0b3d91;
-            margin-bottom: 7px;
+            color: #0d47a1;
+            margin: 10px 0;
         }
 
         .card p {
-            color: #666;
-            font-size: 14px;
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .logout {
             display: block;
-            width: 200px;
             margin: 30px auto 10px;
-            padding: 13px;
-            border: none;
-            border-radius: 9px;
-            background: #0b3d91;
+            max-width: 250px;
+            background: #c62828;
             color: white;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .footer {
             text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 13px;
+            padding: 14px;
+            border-radius: 10px;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="header">
-        <h1>🏫 MUNGURI TEACHERS SYSTEM</h1>
-        <p>Shule ya Msingi Munguri</p>
-        <p>“Elimu, Nidhamu na Kazi”</p>
+<header>
+    <h1>🏫 MUNGURI TEACHERS SYSTEM</h1>
+    <p>Shule ya Msingi Munguri</p>
+    <p><strong>Elimu, Nidhamu na Kazi</strong></p>
+</header>
+
+<div class="container">
+
+    <div class="welcome">
+        <h2>👋 Karibu kwenye Dashboard</h2>
+        <p>Chagua huduma unayotaka kutumia.</p>
     </div>
 
-    <div class="container">
+    <div class="cards">
 
-        <div class="welcome">
-            <h2>Karibu, Mwalimu 👨‍🏫</h2>
-            <p>Hii ni Dashboard yako ya Mwalimu.</p>
+        <a href="profile.html">
+            <div class="card">
+                <div class="icon">👤</div>
+                <h3>Wasifu wa Mwalimu</h3>
+                <p>Angalia na hariri taarifa zako.</p>
+            </div>
+        </a>
+
+        <a href="maandalio.html">
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Maandalio ya Masomo</h3>
+                <p>Andaa, hifadhi na chapisha maandalio.</p>
+            </div>
+        </a>
+
+        <a href="maktaba.html">
+            <div class="card">
+                <div class="icon">📖</div>
+                <h3>Maktaba</h3>
+                <p>Vitabu, mitaala, miongozo na nyaraka.</p>
+            </div>
+        </a>
+
+        <div class="card">
+            <div class="icon">📝</div>
+            <h3>Azimio la Kazi</h3>
+            <p>Andaa na simamia azimio la kazi.</p>
         </div>
 
-        <div class="menu">
+        <div class="card">
+            <div class="icon">🕐</div>
+            <h3>Ratiba ya Vipindi</h3>
+            <p>Angalia ratiba ya vipindi vya shule.</p>
+        </div>
 
-            <a href="profile.html" style="text-decoration:none; color:inherit;">
-    <div class="card">
-        <div class="icon">👤</div>
-        <h3>Wasifu wa Mwalimu</h3>
-        <p>Angalia na hariri taarifa zako.</p>
-    </div>
-</a>
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Tathmini na Mitihani</h3>
+            <p>Tengeneza mitihani, TOS na matokeo.</p>
+        </div>
 
-            <a href="maandalio.html" style="text-decoration:none; color:inherit;">
-    <div class="card">
-        <div class="icon">📚</div>
-        <h3>Maandalio ya Masomo</h3>
-        <p>Andaa, hifadhi na chapisha maandalio.</p>
-    </div>
-</a>
+        <div class="card">
+            <div class="icon">📒</div>
+            <h3>Shajara ya Mwalimu</h3>
+            <p>Simamia taarifa za shajara.</p>
+        </div>
 
-            <a href="maktaba.html" style="text-decoration:none; color:inherit;">
-    <div class="card">
-        <div class="icon">📖</div>
-        <h3>Maktaba</h3>
-        <p>Vitabu, mitaala, miongozo na nyaraka.</p>
-    </div>
-</a>
+        <div class="card">
+            <div class="icon">📢</div>
+            <h3>Matangazo ya Shule</h3>
+            <p>Angalia matangazo muhimu ya shule.</p>
+        </div>
 
-            <div class="card">
-                <div class="icon">📝</div>
-                <h3>Azimio la Kazi</h3>
-                <p>Andaa na hifadhi azimio la kazi.</p>
-            </div>
+        <div class="card">
+            <div class="icon">🏫</div>
+            <h3>Taarifa za Shule</h3>
+            <p>Angalia taarifa mbalimbali za shule.</p>
+        </div>
 
-            <div class="card">
-                <div class="icon">🕐</div>
-                <h3>Ratiba ya Vipindi</h3>
-                <p>Angalia ratiba ya vipindi vya shule.</p>
-            </div>
+        <div class="card">
+            <div class="icon">👨‍🏫</div>
+            <h3>Walimu</h3>
+            <p>Angalia orodha ya walimu.</p>
+        </div>
 
-            <div class="card">
-                <div class="icon">📊</div>
-                <h3>Tathmini na Mitihani</h3>
-                <p>Mitihani, TOS na kumbukumbu za matokeo.</p>
-            </div>
+        <div class="card">
+            <div class="icon">📑</div>
+            <h3>Nyaraka za Shule</h3>
+            <p>Angalia nyaraka muhimu za shule.</p>
+        </div>
 
-            <div class="card">
-                <div class="icon">📒</div>
-                <h3>Shajara ya Mwalimu</h3>
-                <p>Hifadhi kumbukumbu za shughuli za ufundishaji.</p>
-            </div>
+        <div class="card">
+            <div class="icon">🔔</div>
+            <h3>Arifa</h3>
+            <p>Angalia arifa na ujumbe mpya.</p>
+        </div>
 
-            <div class="card">
-                <div class="icon">📢</div>
-                <h3>Matangazo ya Shule</h3>
-                <p>Angalia matangazo na taarifa muhimu.</p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🏫</div>
-                <h3>Taarifa za Shule</h3>
-                <p>Angalia taarifa mbalimbali za shule.</p>
-            </div>
-
-            <div class="card">
-                <div class="icon">👨‍🏫</div>
-                <h3>Walimu</h3>
-                <p>Angalia orodha na mawasiliano ya walimu.</p>
-            </div>
-
-            <div class="card">
-                <div class="icon">📑</div>
-                <h3>Nyaraka za Shule</h3>
-                <p>Fikia nyaraka muhimu za shule.</p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🔔</div>
-                <h3>Arifa</h3>
-                <p>Angalia taarifa na ujumbe mpya.</p>
-            </div>
-
+        <!-- ADMIN -->
+        <a href="admin.html">
             <div class="card">
                 <div class="icon">⚙️</div>
-                <h3>Mipangilio</h3>
-                <p>Simamia mipangilio ya mfumo.</p>
+                <h3>ADMIN</h3>
+                <p>Simamia maktaba, walimu na mfumo.</p>
             </div>
-
-        </div>
-
-        <button class="logout" onclick="location.href='index.html'">
-            🚪 Toka
-        </button>
+        </a>
 
     </div>
 
-    <div class="footer">
-        Munguri Teachers System © 2026
-    </div>
+    <a href="index.html" class="logout">
+        🚪 Toka kwenye Mfumo
+    </a>
+
+</div>
 
 </body>
 </html>
