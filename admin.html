@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Munguri Teachers System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fb;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            color: #0d47a1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 20px;
+            margin-top: 10px;
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            background: #0d47a1;
+            color: white;
+            padding: 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>⚙️ ADMIN DASHBOARD</h1>
+    <p>Munguri Teachers System</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📚 Simamia Maktaba</h2>
+        <p>
+            Ongeza na simamia vitabu, miongozo, mitihani,
+            TOS na nyaraka za shule.
+        </p>
+
+        <button class="btn"
+            onclick="alert('Sehemu ya kuongeza vitabu itaandaliwa katika hatua inayofuata.')">
+            ➕ Ongeza Kitabu
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>👨‍🏫 Simamia Walimu</h2>
+        <p>
+            Angalia na simamia taarifa za walimu wa shule.
+        </p>
+
+        <button class="btn"
+            onclick="alert('Sehemu ya walimu itaandaliwa katika hatua inayofuata.')">
+            👥 Walimu
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>📢 Matangazo</h2>
+        <p>
+            Ongeza na simamia matangazo ya shule.
+        </p>
+
+        <button class="btn"
+            onclick="alert('Sehemu ya matangazo itaandaliwa katika hatua inayofuata.')">
+            📢 Simamia Matangazo
+        </button>
+    </div>
+
+    <a href="dashboard.html" class="back">
+        ⬅️ Rudi Dashboard
+    </a>
+
+</div>
+
+</body>
+</html>
